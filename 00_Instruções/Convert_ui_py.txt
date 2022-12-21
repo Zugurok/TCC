@@ -1,0 +1,13 @@
+No Windows Power Shell
+
+cd C:\Users\Vinicius\anaconda3\Lib\site-packages\PyQt5
+
+Convertendo:
+
+(.ui) para (.py)
+
+pyuic5 -x 00_MenuInicial.ui -o 00_MenuInicial.py
+
+(.qrc) para (.py)
+
+pyrcc5 01_AS_Conv.qrc -o 01_AS_Conv.py

@@ -1,0 +1,1885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuInicial</class>
+ <widget class="QMainWindow" name="MenuInicial">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>890</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>890</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>890</width>
+    <height>510</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Análise Tarifária</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>1</number>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+	background-color: #4d4d4d;
+}</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextBesideIcon</enum>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <property name="silvercolor" stdset="0">
+   <color>
+    <red>0</red>
+    <green>0</green>
+    <blue>0</blue>
+   </color>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="Main_Body">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>54</y>
+      <width>890</width>
+      <height>386</height>
+     </rect>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QFrame" name="Left_Side_Menu">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>150</width>
+       <height>386</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>386</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>UpArrowCursor</cursorShape>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::PreventContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    background-color: #FFFFFF;
+    qproperty-alignment: AlignCenter;
+}
+
+
+QFrame
+{
+   /* border-radius: 2px;
+    border: 1px solid #444;*/
+}
+
+QFrame[frameShape=&quot;0&quot;]
+{
+    border-radius: 2px;
+    border: 1px transparent #444;
+}
+
+QPushButton
+{
+    color: silver;
+    background-color: #33373B;
+	text-align: left;
+   /* border-width: 2px;
+    border-color: #4A4949;
+    border-style: solid;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+	qproperty-halignment: AlignLeft;
+    /* outline: none; */
+    /* min-width: 40px; */
+}
+
+QPushButton:disabled
+{
+    background-color: #302F2F;
+    /*border-width: 2px;
+    border-color: #3A3939;
+    border-style: solid;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*border-radius: 2px;*/
+    color: #808080;
+}
+
+QPushButton:focus {
+    background-color: #3d8ec9;
+    color: white;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="Button_ModTar">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>150</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>54</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="accessibleDescription">
+       <string extracomment="Modalidade Tarifária"/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align: left;</string>
+      </property>
+      <property name="text">
+       <string>Modalidade Tarifaria</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../02_Image/cil-terminal.png</normaloff>../02_Image/cil-terminal.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Button_ConsumoAtual">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>54</y>
+        <width>150</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>54</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+      <property name="accessibleDescription">
+       <string extracomment="teste"/>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align: left;</string>
+      </property>
+      <property name="text">
+       <string>Consumo Atual</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../02_Image/cil-speedometer.png</normaloff>../02_Image/cil-speedometer.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Button_Settings">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>162</y>
+        <width>150</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>54</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="toolTipDuration">
+       <number>50</number>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align: left;</string>
+      </property>
+      <property name="text">
+       <string>Configurações</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../02_Image/cil-settings.png</normaloff>../02_Image/cil-settings.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Button_Resultado">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>108</y>
+        <width>150</width>
+        <height>54</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>54</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">text-align: left;</string>
+      </property>
+      <property name="text">
+       <string>Resultado</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../02_Image/cil-chart-line.png</normaloff>../02_Image/cil-chart-line.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Central_Side_Pages">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>0</y>
+       <width>640</width>
+       <height>386</height>
+      </rect>
+     </property>
+     <property name="accessibleDescription">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+   /* background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: 77 24px &quot;Verdana&quot;;
+}
+
+
+QFrame
+{
+   /* border-radius: 2px;
+    border: 1px solid #444;*/
+}
+
+QFrame[frameShape=&quot;0&quot;]
+{
+    border-radius: 2px;
+    border: 1px transparent #444;
+}
+
+QPushButton
+{
+    color: silver;
+    background-color: #33373B;
+   /* border-width: 2px;
+    border-color: #4A4949;
+    border-style: solid;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+	qproperty-halignment: AlignLeft;
+    /* outline: none; */
+    /* min-width: 40px; */
+}
+
+QPushButton:disabled
+{
+    background-color: #302F2F;
+    /*border-width: 2px;
+    border-color: #3A3939;
+    border-style: solid;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*border-radius: 2px;*/
+    color: #808080;
+}
+
+QPushButton:hover {
+	background-color: rgb(138, 203, 250);
+    color: white;
+}
+
+/*QPushButton:hover{
+  background-color: rgb(224, 255, 241);
+}*/</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-1</y>
+        <width>640</width>
+        <height>386</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Window_ModTar">
+       <property name="font">
+        <font>
+         <family>Myanmar Text</family>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+	/*min-width: 140px;
+	min-height: 20px;
+	max-width: 200px;
+	max-height: 20px;*/
+}
+
+QDoubleSpinBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+    /*min-width: 75px;*/
+}
+
+QLabel {
+    /*background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;
+}
+
+Line {
+	background-color:#3d8ec9;
+    /*	color: #3d8ec9;
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;*/
+}
+
+QGroupBox {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+    border: 2px solid #999999;
+    border-radius: 4px;
+    margin-top: 1ex; /* leave space at the top for the title */
+    font: bold 15px &quot;Verdana&quot;;
+	color: #3d8ec9;
+}
+
+QGroupBox::title {
+	background-color: #999999;
+	    border-radius: 4px;
+	    margin-top: 1ex; /* leave space at the top for the title */
+	font: 75 14pt &quot;Verdana&quot;;
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* position at the top center */
+    padding: 0 3px;
+    font-size: 13px;
+    color: white;
+}</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>621</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="0,2">
+         <item>
+          <widget class="QLabel" name="Label_TtuloModTar">
+           <property name="text">
+            <string>Enquadramento Tarifário</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0,2">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetMinimumSize</enum>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="VLayout_CategoriaTar1">
+             <property name="spacing">
+              <number>30</number>
+             </property>
+             <property name="leftMargin">
+              <number>1</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_titulocategoriatar">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: silver;
+    border-style: solid;
+    border: 0px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: #3d8ec9;
+	font: bold 18px &quot;Verdana&quot;;
+	min-width: 200px;
+	min-height: 25px;
+	max-width: 200px;
+	max-height: 50px;
+}</string>
+               </property>
+               <property name="text">
+                <string>Escolha sua Tarifa</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_Subgrupo">
+               <property name="maximumSize">
+                <size>
+                 <width>204</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: silver;
+    border-style: solid;
+    border: 0px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: #3d8ec9;
+	font: bold 12px &quot;Verdana&quot;;
+	min-width: 200px;
+	min-height: 20px;
+	max-width: 200px;
+	max-height: 20px;
+}</string>
+               </property>
+               <property name="text">
+                <string>Grupo Tarifário</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_Subgrupo">
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>A1 (≥ 230 kV)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>A2 (88 kV a 138 kV)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>A3 (69 kV)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>A3a (30 kV a 44 kV)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>A4 (2.3 a 25 kV)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>AS (≤ 2.3 kV subterrâneo)</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_modtar">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: silver;
+    border-style: solid;
+    border: 0px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: #3d8ec9;
+	font: bold 12px &quot;Verdana&quot;;
+	min-width: 200px;
+	min-height: 20px;
+	max-width: 200px;
+	max-height: 20px;
+}</string>
+               </property>
+               <property name="text">
+                <string>Modalidade Tarifária</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_ModTar">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>140</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>140</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <property name="insertPolicy">
+                <enum>QComboBox::InsertAtBottom</enum>
+               </property>
+               <property name="sizeAdjustPolicy">
+                <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+               </property>
+               <property name="duplicatesEnabled">
+                <bool>false</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Azul</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Verde</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Binômia</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="VLayout_Tarifas">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QGroupBox" name="groupBox_TarFP">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    /*background-color: silver;
+    border-style: solid;
+    border: 0px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;*/
+	color: #3d8ec9;
+	font: bold 12px &quot;Verdana&quot;;
+	min-width: 150px;
+	min-height: 20px;
+	max-width: 150px;
+	max-height: 20px;
+}</string>
+               </property>
+               <property name="title">
+                <string>Fora de Ponta</string>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+               <widget class="QLabel" name="label_FPCI">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>30</y>
+                  <width>150</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Com Imposto</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_FPSI">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>100</y>
+                  <width>150</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Sem Imposto</string>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="QDoubleSpinBox_TUSDP">
+                <property name="geometry">
+                 <rect>
+                  <x>210</x>
+                  <y>30</y>
+                  <width>140</width>
+                  <height>25</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>140</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>140</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <double>200.000000000000000</double>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="QDoubleSpinBox_TUSDFP">
+                <property name="geometry">
+                 <rect>
+                  <x>210</x>
+                  <y>100</y>
+                  <width>140</width>
+                  <height>25</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>140</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>140</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <double>100.000000000000000</double>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_tusdp">
+                <property name="geometry">
+                 <rect>
+                  <x>210</x>
+                  <y>60</y>
+                  <width>140</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    /*background-color: silver;
+    border-style: solid;
+    border: 0px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;*/
+	color: silver;
+	font: 12px &quot;Verdana&quot;;
+	min-width: 140px;
+	min-height: 20px;
+	max-width: 140px;
+	max-height: 20px;
+}</string>
+                </property>
+                <property name="text">
+                 <string>TUSD (R$/kW)</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_tusdfp">
+                <property name="geometry">
+                 <rect>
+                  <x>210</x>
+                  <y>130</y>
+                  <width>140</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    /*background-color: silver;
+    border-style: solid;
+    border: 0px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;*/
+	color: silver;
+	font: 12px &quot;Verdana&quot;;
+	min-width: 140px;
+	min-height: 20px;
+	max-width: 140px;
+	max-height: 20px;
+}</string>
+                </property>
+                <property name="text">
+                 <string>TUSD (R$/kW)</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_TarP">
+               <property name="minimumSize">
+                <size>
+                 <width>124</width>
+                 <height>143</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                 <stylestrategy>PreferDefault</stylestrategy>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    /*background-color: silver;
+    border-style: solid;
+    border: 0px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;*/
+	color: #3d8ec9;
+	font: bold 12px &quot;Verdana&quot;;
+	min-width: 150px;
+	min-height: 20px;
+	max-width: 150px;
+	max-height: 20px;
+}</string>
+               </property>
+               <property name="title">
+                <string>Ponta</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+               <widget class="QLabel" name="label_PCI">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>30</y>
+                  <width>150</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>150</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Com Imposto</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_PSI">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>100</y>
+                  <width>150</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Sem Imposto</string>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="QDoubleSpinBox_TEP">
+                <property name="geometry">
+                 <rect>
+                  <x>210</x>
+                  <y>30</y>
+                  <width>140</width>
+                  <height>25</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>140</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>140</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <double>200.000000000000000</double>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_tep">
+                <property name="geometry">
+                 <rect>
+                  <x>210</x>
+                  <y>60</y>
+                  <width>140</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    /*background-color: silver;
+    border-style: solid;
+    border: 0px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;*/
+	color: silver;
+	font: 12px &quot;Verdana&quot;;
+	min-width: 140px;
+	min-height: 20px;
+	max-width: 140px;
+	max-height: 20px;
+}</string>
+                </property>
+                <property name="text">
+                 <string>TUSD (R$/kW)</string>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="QDoubleSpinBox_TEFP">
+                <property name="geometry">
+                 <rect>
+                  <x>210</x>
+                  <y>100</y>
+                  <width>140</width>
+                  <height>25</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>140</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>140</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <double>100.000000000000000</double>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_fp">
+                <property name="geometry">
+                 <rect>
+                  <x>210</x>
+                  <y>130</y>
+                  <width>140</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    /*background-color: silver;
+    border-style: solid;
+    border: 0px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;*/
+	color: silver;
+	font: 12px &quot;Verdana&quot;;
+	min-width: 140px;
+	min-height: 20px;
+	max-width: 140px;
+	max-height: 20px;
+}</string>
+                </property>
+                <property name="text">
+                 <string>TUSD (R$/kW)</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Window_Resultado">
+       <property name="styleSheet">
+        <string notr="true">
+
+QLabel {
+    /*background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;
+	min-width: 291px;
+	min-height: 31px;
+}</string>
+       </property>
+       <widget class="QLabel" name="label_TituloResultados">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>20</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Resultados</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Window_Settings">
+       <property name="styleSheet">
+        <string notr="true">QComboBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+	/*min-width: 140px;
+	min-height: 20px;
+	max-width: 200px;
+	max-height: 20px;*/
+}
+
+QDoubleSpinBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+    /*min-width: 75px;*/
+}
+
+QLabel {
+    /*background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;
+}
+
+Line {
+	background-color:#3d8ec9;
+    /*	color: #3d8ec9;
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;*/
+}
+
+QGroupBox {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+    border: 2px solid #999999;
+    border-radius: 4px;
+    margin-top: 1ex; /* leave space at the top for the title */
+    font: bold 15px &quot;Verdana&quot;;
+	color: #3d8ec9;
+}
+
+QGroupBox::title {
+	background-color: #999999;
+	    border-radius: 4px;
+	    margin-top: 1ex; /* leave space at the top for the title */
+	font: 75 14pt &quot;Verdana&quot;;
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* position at the top center */
+    padding: 0 3px;
+    font-size: 13px;
+    color: white;
+}</string>
+       </property>
+       <widget class="QLabel" name="Label_TituloSettings">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>20</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Configurações</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Window_PrevDC">
+       <property name="styleSheet">
+        <string notr="true">QComboBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+	/*min-width: 140px;
+	min-height: 20px;
+	max-width: 200px;
+	max-height: 20px;*/
+}
+
+QDoubleSpinBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+    /*min-width: 75px;*/
+}
+
+QLabel {
+    /*background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;
+}
+
+Line {
+	background-color:#3d8ec9;
+    /*	color: #3d8ec9;
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;*/
+}
+
+QGroupBox {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+    border: 2px solid #999999;
+    border-radius: 4px;
+    margin-top: 1ex; /* leave space at the top for the title */
+    font: bold 15px &quot;Verdana&quot;;
+	color: #3d8ec9;
+}
+
+QGroupBox::title {
+	background-color: #999999;
+	    border-radius: 4px;
+	    margin-top: 1ex; /* leave space at the top for the title */
+	font: 75 14pt &quot;Verdana&quot;;
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* position at the top center */
+    padding: 0 3px;
+    font-size: 13px;
+    color: white;
+}</string>
+       </property>
+       <widget class="QLabel" name="Label_TituloPrevDC">
+        <property name="geometry">
+         <rect>
+          <x>75</x>
+          <y>20</y>
+          <width>500</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Previsão de Demanda Contratada</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Window_Home">
+       <property name="styleSheet">
+        <string notr="true">QComboBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+	/*min-width: 140px;
+	min-height: 20px;
+	max-width: 200px;
+	max-height: 20px;*/
+}
+
+QDoubleSpinBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+    /*min-width: 75px;*/
+}
+
+QLabel {
+    /*background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;
+}
+
+Line {
+	background-color:#3d8ec9;
+    /*	color: #3d8ec9;
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;*/
+}
+
+QGroupBox {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+    border: 2px solid #999999;
+    border-radius: 4px;
+    margin-top: 1ex; /* leave space at the top for the title */
+    font: bold 15px &quot;Verdana&quot;;
+	color: #3d8ec9;
+}
+
+QGroupBox::title {
+	background-color: #999999;
+	    border-radius: 4px;
+	    margin-top: 1ex; /* leave space at the top for the title */
+	font: 75 14pt &quot;Verdana&quot;;
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* position at the top center */
+    padding: 0 3px;
+    font-size: 13px;
+    color: white;
+}</string>
+       </property>
+       <widget class="QLabel" name="Label_TituloHome">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>20</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Menu Inicial</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Window_ConsumoAtual">
+       <property name="styleSheet">
+        <string notr="true">QComboBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+	/*min-width: 140px;
+	min-height: 20px;
+	max-width: 200px;
+	max-height: 20px;*/
+}
+
+QDoubleSpinBox
+{
+    selection-background-color: #302F2F;
+    background-color: #201F1F;
+    border-style: solid;
+    border: 1px solid #3A3939;
+    border-radius: 2px;
+    padding: 2px;
+	color: silver
+    /*min-width: 75px;*/
+}
+
+QLabel {
+    /*background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;
+}
+
+Line {
+	background-color:#3d8ec9;
+    /*	color: #3d8ec9;
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: bold 24px &quot;Verdana&quot;;*/
+}
+
+QGroupBox {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+    border: 2px solid #999999;
+    border-radius: 4px;
+    margin-top: 1ex; /* leave space at the top for the title */
+    font: bold 15px &quot;Verdana&quot;;
+	color: #3d8ec9;
+}
+
+QGroupBox::title {
+	background-color: #999999;
+	    border-radius: 4px;
+	    margin-top: 1ex; /* leave space at the top for the title */
+	font: 75 14pt &quot;Verdana&quot;;
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* position at the top center */
+    padding: 0 3px;
+    font-size: 13px;
+    color: white;
+}</string>
+       </property>
+       <widget class="QLabel" name="Label_TituloConsAtual">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>20</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Consumo Atual</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="Right_Frame">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>0</y>
+       <width>100</width>
+       <height>386</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Main_Head">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>790</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: #FFFFFF;
+    qproperty-alignment: AlignCenter;
+}
+
+
+QFrame
+{
+    border-radius: 2px;
+    border: 1px solid #444;
+}
+
+QFrame[frameShape=&quot;0&quot;]
+{
+    border-radius: 2px;
+    border: 1px transparent #444;
+}
+
+QPushButton
+{
+    color: silver;
+    background-color: #33373B;
+	text-align: left;
+   /* border-width: 2px;
+    border-color: #4A4949;
+    border-style: solid;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+	qproperty-halignment: AlignLeft;
+    /* outline: none; */
+    /* min-width: 40px; */
+}
+
+QPushButton:disabled
+{
+    background-color: #302F2F;
+    /*border-width: 2px;
+    border-color: #3A3939;
+    border-style: solid;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*border-radius: 2px;*/
+    color: #808080;
+}
+
+QPushButton:focus {
+    background-color: #3d8ec9;
+    color: white;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <widget class="QPushButton" name="Button_Hamburguer">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>150</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Menu</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../02_Image/cil-menu.png</normaloff>../02_Image/cil-menu.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="Main_Bottom">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>440</y>
+      <width>890</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>10</y>
+      <width>62</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="Button_Minimizar">
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../02_Image/cil-window-minimize.png</normaloff>../02_Image/cil-window-minimize.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Button_Close">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../02_Image/cil-x.png</normaloff>../02_Image/cil-x.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Button_Close</sender>
+   <signal>clicked()</signal>
+   <receiver>MenuInicial</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>845</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Button_Minimizar</sender>
+   <signal>clicked()</signal>
+   <receiver>MenuInicial</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>815</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
