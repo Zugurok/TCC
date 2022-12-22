@@ -70,9 +70,10 @@ class Methods:
                 lista_tolerancia[i] = dem_medida[i] - dem_cont
 
             if dem_medida[i] > tolerancia:
-                lista_ultrapassagem[i] = (dem_medida[i] - dem_cont) * 2
+                lista_ultrapassagem[i] = ((dem_medida[i] - dem_cont) * 2)
+                dem_medida[i] = dem_cont
 
-        return lista_ultrapassagem, lista_tolerancia, lista_sobra
+        return lista_ultrapassagem, lista_tolerancia, lista_sobra, dem_medida
 
     def fat_tol(self):
         fatura = 0
@@ -202,22 +203,23 @@ class Methods:
 
 
 class Graphics(Methods):
-    def __init__(self, dmfp=None, dmp=None, dcfp=0, dcp=0):
+    def __init__(self):
+        # , dmfp=None, dmp=None, dcfp=0, dcp=0
         super(Methods).__init__()
         self.meses = metodos.meses
-        self.dmfp = dmfp
+        """self.dmfp = dmfp
         self.dcfp = dcfp
         self.lista_dcfp = [dcfp] * 12
         self.toleranciafp = dcfp * 1.05
         self.dmp = dmp
         self.dcp = dcp
         self.lista_dcp = [dcp] * 12
-        self.toleranciap = dcp * 1.05
+        self.toleranciap = dcp * 1.05"""
 
     def dem_medida_atual_convencional(self, dem_medida_fp, dem_medida_p, dem_cont):
         lista_dc = [dem_cont] * 12
         tolerancia = dem_cont * 1.05
-        barWidth = 0.4
+        barWidth = 0.3
         # set width bar
         plt.figure(figsize=(12, 8))
         # set position of bar on X axis
@@ -225,10 +227,10 @@ class Graphics(Methods):
         # Make the plot
         plt.bar(x_axis - 0.2, dem_medida_fp, color="blue", label="DM FP", width=barWidth)
         plt.bar(x_axis + 0.2, dem_medida_p, color="green", label="DM P", width=barWidth)
-        plt.hlines(y=lista_dc, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='black', linestyle='dashed',
-                       label=f"DC - Demanda Contratada: {float(dem_cont)}")
-        plt.hlines(y=tolerancia, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='orange', linestyle='dashed',
-                       label=f"Lim. Tolerância: {tolerancia}")
+        plt.hlines(y=lista_dc, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='black', linestyle='dashed',
+                       label=f"DC: {float(dem_cont)}")
+        plt.hlines(y=tolerancia, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='orange', linestyle='dashed',
+                       label=f"Tolerância: {tolerancia}")
         plt.xticks(x_axis, self.meses)
         plt.legend(loc=3)
         plt.xlabel('Ano (Meses)')
@@ -246,10 +248,10 @@ class Graphics(Methods):
         # Make the plot
         plt.bar(x_axis - 0.2, dem_medida_fp, color="blue", label="DM FP", width=barWidth)
         plt.bar(x_axis + 0.2, dem_medida_p, color="green", label="DM P", width=barWidth)
-        plt.hlines(y=lista_dc, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='black', linestyle='dashed',
-                   label=f"DC - Demanda Contratada: {float(dem_cont)}")
-        plt.hlines(y=tolerancia, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='orange', linestyle='dashed',
-                   label=f"Lim. Tolerância: {tolerancia}")
+        plt.hlines(y=lista_dc, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='black', linestyle='dashed',
+                   label=f"DC: {float(dem_cont)}")
+        plt.hlines(y=tolerancia, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='orange', linestyle='dashed',
+                   label=f"Tolerância: {tolerancia}")
         plt.xticks(x_axis, self.meses)
         plt.legend(loc=3)
         plt.xlabel('Ano (Meses)')
@@ -266,15 +268,15 @@ class Graphics(Methods):
         plt.bar(x_axis - 0.2, self.dmfp, color="blue", label="DM FP", width=barWidth)  # DM FP
         plt.bar(x_axis + 0.2, self.dmp, color="green", label="DM P", width=barWidth)  # DM P
         # Fora de Ponta
-        plt.hlines(y=self.lista_dcfp, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='black', linestyle='dashed',
+        plt.hlines(y=self.lista_dcfp, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='black', linestyle='dashed',
                        label=f"DC FP: {float(self.dcfp)}")  # DC FP
-        plt.hlines(y=self.toleranciafp, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='orange', linestyle='dashed',
-                       label=f"Lim. Tolerância: {self.toleranciafp}")  # LimTol FP
+        plt.hlines(y=self.toleranciafp, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='orange', linestyle='dashed',
+                       label=f"Tolerância FPonta: {self.toleranciafp}")  # LimTol FP
         # Ponta
-        plt.hlines(y=self.lista_dcp, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='black', linestyle='solid',
+        plt.hlines(y=self.lista_dcp, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='black', linestyle='solid',
                        label=f"DC P: {float(self.dcp)}")  # DC P
-        plt.hlines(y=self.toleranciap, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='orange', linestyle='solid',
-                       label=f"Lim. Tolerância: {self.toleranciap}")  # LimTol P
+        plt.hlines(y=self.toleranciap, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='orange', linestyle='solid',
+                       label=f"Tolerância Ponta: {self.toleranciap}")  # LimTol P
         plt.xticks(x_axis, self.meses)
         plt.legend(loc=3)
         plt.xlabel('Ano (Meses)')
@@ -282,72 +284,18 @@ class Graphics(Methods):
         return plt.show()
 
     def graf_ajuste_convencional(self, dem_medida, dem_cont):
-        lista_tolerancia, lista_ultrapassagem, lista_sobra = metodos.dem_faturada(dem_medida, dem_cont)
+        lista_ultrapassagem, lista_tolerancia, lista_sobra, demanda_medida = metodos.dem_faturada(dem_medida, dem_cont)
         tolerancia = dem_cont * 1.05
         barWidth = 0.4
-
-        for i in range(0, 12):
-            if dem_medida[i] <= dem_cont:
-                lista_sobra[i] = dem_cont - dem_medida[i]
-            elif (dem_medida[i] <= tolerancia) and (dem_medida[i] > dem_cont):
-                lista_tolerancia[i] = dem_medida[i] - dem_cont
-            elif dem_medida[i] > tolerancia:  # Calculo para encontrar demanda de ultrapassagem
-                lista_ultrapassagem[i] = dem_medida[i] - dem_cont
 
         # set width bar
         plt.figure(figsize=(12, 8))
         # set position of bar on X axis
         x_axis = np.arange(len(self.meses))
         # Make the plot
-        plt.bar(x_axis, dem_medida, color="blue", label="DM - Demanda Medida", width=barWidth)
-        plt.bar(x_axis, lista_sobra, bottom=dem_medida, color="gray", label="DS - Demanda não utilizada", width=barWidth)
-        plt.bar(x_axis, lista_ultrapassagem, bottom=dem_medida, color="red", label="DU - Demanda Ultrapassada", width=barWidth)
-        plt.hlines(y=dem_cont, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='black', linestyle='dashed',
-                   label=f"DC - Demanda Contratada: {dem_cont} kW")
-        plt.hlines(y=tolerancia, xmin=x_axis[0] - 1, xmax=x_axis[11] + 1, colors='orange', linestyle='dashed',
-                   label=f"Tolerância: {tolerancia} kW")
-        plt.xticks(x_axis, self.meses)
-        plt.legend(loc=3)
-        # plt.title("Histórico de consumo por mês")
-        plt.xlabel('Ano (Meses)')
-        plt.ylabel('Demanda Medida (kW)')
-        plt.show()
-
-    def graf_ajuste_verde(self, dem_medida_fp, dem_medida_p, dem_cont):
-        lista_tolerancia_fp, lista_ultrapassagem_fp, lista_sobra_fp = metodos.dem_faturada(dem_medida_fp, dem_cont)
-        lista_tolerancia_p, lista_ultrapassagem_p, lista_sobra_p = metodos.dem_faturada(dem_medida_p, dem_cont)
-        tolerancia = dem_cont * 1.05
-        barWidth = 0.3
-
-        # DEMANDA CONTRATADA FORA DE PONTA
-        for i in range(0, 12):
-            if dem_medida_fp[i] <= dem_cont:
-                lista_sobra_fp[i] = dem_cont - dem_medida_fp[i]
-            elif (dem_medida_fp[i] <= tolerancia) and (dem_medida_fp[i] > dem_cont):
-                lista_tolerancia_fp[i] = dem_medida_fp[i] - dem_cont
-            elif dem_medida_fp[i] > tolerancia:  # Calculo para encontrar demanda de ultrapassagem
-                lista_ultrapassagem_fp[i] = dem_medida_fp[i] - dem_cont
-
-        # DEMANDA CONTRATADA PONTA
-        for i in range(0, 12):
-            if dem_medida_p[i] <= dem_cont:
-                lista_sobra_p[i] = dem_cont - dem_medida_p[i]
-            elif (dem_medida_p[i] <= tolerancia) and (dem_medida_p[i] > dem_cont):
-                lista_tolerancia_p[i] = dem_medida_p[i] - dem_cont
-            elif dem_medida_p[i] > tolerancia:  # Calculo para encontrar demanda de ultrapassagem
-                lista_ultrapassagem_p[i] = dem_medida_p[i] - dem_cont
-        # set width bar
-        plt.figure(figsize=(12, 8))
-        # set position of bar on X axis
-        x_axis = np.arange(len(self.meses))
-        # PLOT FORA DE PONTA
-        plt.bar(x_axis - 0.21, dem_medida_fp, color="blue", label="DM FPonta", width=barWidth, edgecolor='black')
-        plt.bar(x_axis - 0.21, lista_sobra_fp, bottom=dem_medida_fp, color="gray", label="DS", width=barWidth)
-        plt.bar(x_axis - 0.21, lista_ultrapassagem_fp, bottom=dem_medida_fp, color="red", label="DU", width=barWidth)
-        # PLOT PONTA
-        plt.bar(x_axis + 0.21, dem_medida_p, color="green", label="DM Ponta", width=barWidth, edgecolor='black', capsize=7)
-        plt.bar(x_axis + 0.21, lista_sobra_p, bottom=dem_medida_p, color="gray", width=barWidth)
-        plt.bar(x_axis + 0.21, lista_ultrapassagem_p, bottom=dem_medida_p, color="red", width=barWidth)
+        plt.bar(x_axis, dem_medida, color="blue", label="DM", width=barWidth, edgecolor='silver')
+        plt.bar(x_axis, lista_sobra, bottom=dem_medida, color="gray", label="DS", width=barWidth, edgecolor='silver')
+        plt.bar(x_axis, lista_ultrapassagem, bottom=dem_medida, color="red", label="DU", width=barWidth, edgecolor='silver')
         plt.hlines(y=dem_cont, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='black', linestyle='dashed',
                    label=f"DC: {dem_cont} kW")
         plt.hlines(y=tolerancia, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='orange', linestyle='dashed',
@@ -359,7 +307,71 @@ class Graphics(Methods):
         plt.ylabel('Demanda Medida (kW)')
         plt.show()
 
-##  PROXIMO GRAFICO: GRAF_AJUSTE_AZUL
+    def graf_ajuste_verde(self, dem_medida_fp, dem_medida_p, dem_cont):
+        # DEMANDA CONTRATADA FORA DE PONTA
+        lista_ultrapassagem_fp, lista_tolerancia_fp, lista_sobra_fp, demanda_medida_fp = metodos.dem_faturada(dem_medida_fp, dem_cont)
+        # DEMANDA CONTRATADA PONTA
+        lista_ultrapassagem_p, lista_tolerancia_p, lista_sobra_p, demanda_medida_p = metodos.dem_faturada(dem_medida_p, dem_cont)
+        tolerancia = dem_cont * 1.05
+        barWidth = 0.3
+
+        # set width bar
+        plt.figure(figsize=(12, 8))
+        # set position of bar on X axis
+        x_axis = np.arange(len(self.meses))
+        # PLOT FORA DE PONTA
+        plt.bar(x_axis - 0.21, demanda_medida_fp, color="blue", label="DM FPonta", width=barWidth, edgecolor='silver')
+        plt.bar(x_axis - 0.21, lista_sobra_fp, bottom=demanda_medida_fp, color="gray", label="DS", width=barWidth, edgecolor='silver')
+        plt.bar(x_axis - 0.21, lista_ultrapassagem_fp, bottom=demanda_medida_fp, color="red", label="DU", width=barWidth, edgecolor='silver')
+        # PLOT PONTA
+        plt.bar(x_axis + 0.21, demanda_medida_p, color="green", label="DM Ponta", width=barWidth, edgecolor='silver')
+        #plt.bar(x_axis + 0.21, lista_sobra_p, bottom=demanda_medida_p, color="gray", width=barWidth, edgecolor='silver')  # Retirado pois não existe dc_p para se aplicar o metodo
+        plt.bar(x_axis + 0.21, lista_ultrapassagem_p, bottom=demanda_medida_p, color="red", width=barWidth, edgecolor='silver')
+        plt.hlines(y=dem_cont, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='black', linestyle='dashed',
+                   label=f"DC: {dem_cont} kW")
+        plt.hlines(y=tolerancia, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='orange', linestyle='dashed',
+                   label=f"Tolerância: {tolerancia} kW")
+        plt.xticks(x_axis, self.meses)
+        plt.legend(loc=3)
+        # plt.title("Histórico de consumo por mês")
+        plt.xlabel('Ano (Meses)')
+        plt.ylabel('Demanda Medida (kW)')
+        plt.show()
+
+    def graf_ajuste_azul(self, dem_medida_fp, dem_medida_p, dem_cont_fp, dem_cont_p):
+        lista_ultrapassagem_fp, lista_tolerancia_fp, lista_sobra_fp, demanda_medida_fp = metodos.dem_faturada(dem_medida_fp, dem_cont_fp)
+        lista_ultrapassagem_p, lista_tolerancia_p, lista_sobra_p, demanda_medida_p = metodos.dem_faturada(dem_medida_p, dem_cont_p)
+        tolerancia_fp = dem_cont_fp * 1.05
+        tolerancia_p = dem_cont_p * 1.05
+        barWidth = 0.3
+
+        # set width bar
+        plt.figure(figsize=(12, 8))
+        # set position of bar on X axis
+        x_axis = np.arange(len(self.meses))
+        # PLOT FORA DE PONTA
+        plt.bar(x_axis - 0.21, demanda_medida_fp, color="blue", label="DM FPonta", width=barWidth, edgecolor='silver', capsize=7)
+        plt.bar(x_axis - 0.21, lista_sobra_fp, bottom=dem_medida_fp, color="gray", label="DS", width=barWidth, edgecolor='silver')
+        plt.bar(x_axis - 0.21, lista_ultrapassagem_fp, bottom=dem_medida_fp, color="red", label="DU", width=barWidth, edgecolor='silver')
+        plt.hlines(y=dem_cont_fp, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='black', linestyle='dashed',
+                   label=f"DC FP: {dem_cont_fp} kW")
+        plt.hlines(y=tolerancia_fp, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='orange', linestyle='dashed',
+                   label=f"Tolerância FPonta: {tolerancia_fp} kW")
+        # PLOT PONTA
+        plt.bar(x_axis + 0.21, demanda_medida_p, color="green", label="DM Ponta", width=barWidth, edgecolor='silver', capsize=7)
+        plt.bar(x_axis + 0.21, lista_sobra_p, bottom=dem_medida_p, color="gray", width=barWidth, edgecolor='silver')
+        plt.bar(x_axis + 0.21, lista_ultrapassagem_p, bottom=dem_medida_p, color="red", width=barWidth, edgecolor='silver')
+        plt.hlines(y=dem_cont_p, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='black', linestyle='solid',
+                   label=f"DC FP: {dem_cont_p} kW")
+        plt.hlines(y=tolerancia_p, xmin=x_axis[0] - 0.5, xmax=x_axis[11] + 0.5, colors='orange', linestyle='solid',
+                   label=f"Tolerância Ponta: {tolerancia_p} kW")
+        plt.xticks(x_axis, self.meses)
+        plt.legend(loc=3)
+        # plt.title("Histórico de consumo por mês")
+        plt.xlabel('Ano (Meses)')
+        plt.ylabel('Demanda Medida (kW)')
+        plt.show()
+
 
 if __name__ == "__main__":
     # DECLARANDO AS VARIÁVEIS - DM
@@ -386,9 +398,11 @@ if __name__ == "__main__":
                       tarifa_dem_ponta_ct=tar_dem_p_ct, tarifa_dem_ponta_st=tar_dem_p_st,
                       mod_tar=mod_tar, subgrupo=subgrupo)
 
-    graficos = Graphics(dmfp=dem_medfp, dmp=dem_medp, dcfp=170, dcp=50)
+    graficos = Graphics()
+    # dmfp=dem_medfp, dmp=dem_medp, dcfp=170, dcp=55
     # APLICANDO OS MÉTODOS
     #graficos.dem_medida_atual_convencional(dem_medida_fp=dem_medfp, dem_medida_p=dem_medp, dem_cont=dem_cont_fp)
     #graficos.dem_medida_atual_verde(dem_medida_fp=dem_medfp, dem_medida_p=dem_medp, dem_cont=dem_cont_fp)
     #graficos.graf_ajuste_convencional(dem_medfp, 170)
     #graficos.graf_ajuste_verde(dem_medfp, dem_medp, dem_cont_fp)
+    #graficos.graf_ajuste_azul(dem_medfp, dem_medp, dem_cont_fp, dem_cont_p)
