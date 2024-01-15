@@ -13,7 +13,7 @@ from PyQt5.uic import *
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 import numpy as np
-import pandas as pd
+#import pandas as pd
 
 
 class Main(QMainWindow, Ui_MainWindow, QWidget):
@@ -23,7 +23,7 @@ class Main(QMainWindow, Ui_MainWindow, QWidget):
         self.historico = []
         self.tarifas = []
         self.meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
-        loadUi(r"C:\Users\Vinicius\Documents\GitHub\TCC\03_MVC\Projeto\Projeto_V6.ui", self)
+        loadUi(r"C:\Users\Vinicius\Documents\GitHub\TCC\03_Projeto\Projeto_V6.ui", self)
         self.reg_historico()
         self.setMinimumSize(1920, 1080)
         self.setWindowFlags(Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint)
@@ -37,21 +37,21 @@ class Main(QMainWindow, Ui_MainWindow, QWidget):
         
     def window_flag(self):
         self.pushButton_8.clicked.connect(lambda: self.showMinimized())
-        self.pushButton_8.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\03_MVC\teste\Icons\minus_disabled.png"))
+        self.pushButton_8.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\02_Image\minus_disabled.png"))
         
         self.pushButton_7.clicked.connect(lambda: self.bt_maximize())
-        self.pushButton_7.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\03_MVC\teste\Icons\maximize-2_disabled.png"))
+        self.pushButton_7.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\02_Image\maximize-2_disabled.png"))
         
         self.pushButton_9.clicked.connect(lambda: self.close())
-        self.pushButton_9.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\03_MVC\teste\Icons\x_disabled.png"))
+        self.pushButton_9.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\02_Image\x_disabled.png"))
 
     def bt_maximize(self):
         if ui_window.isMaximized() == True:
-            self.pushButton_7.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\03_MVC\teste\Icons\maximize-2_disabled.png"))
+            self.pushButton_7.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\02_Image\maximize-2_disabled.png"))
             self.showNormal()
 
         elif ui_window.isMaximized() == False:
-            self.pushButton_7.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\03_MVC\teste\Icons\minimize-2_disabled.png"))
+            self.pushButton_7.setIcon(QIcon(r"C:\Users\Vinicius\Documents\GitHub\TCC\02_Image\minimize-2_disabled.png"))
             self.showMaximized()
 
     def reg_historico(self):

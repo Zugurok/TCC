@@ -204,7 +204,7 @@ border: 3px solid rgb(120, 157, 186)
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>Icons/zap.png</pixmap>
+             <pixmap>../02_Image/zap.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -301,7 +301,7 @@ border: 3px solid rgb(120, 157, 186)
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>Icons/bar-chart-2_disabled.png</normaloff>Icons/bar-chart-2_disabled.png</iconset>
+              <normaloff>../02_Image/bar-chart-2_focus.png</normaloff>../02_Image/bar-chart-2_focus.png</iconset>
             </property>
             <property name="autoDefault">
              <bool>false</bool>
@@ -341,7 +341,7 @@ border: 3px solid rgb(120, 157, 186)
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>Icons/dollar-sign_disabled.png</normaloff>Icons/dollar-sign_disabled.png</iconset>
+              <normaloff>../02_Image/dollar-sign_focus.png</normaloff>../02_Image/dollar-sign_focus.png</iconset>
             </property>
            </widget>
           </item>
@@ -366,7 +366,7 @@ border: 3px solid rgb(120, 157, 186)
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>Icons/pie-chart_focus.png</normaloff>Icons/pie-chart_focus.png</iconset>
+              <normaloff>../02_Image/pie-chart_focus.png</normaloff>../02_Image/pie-chart_focus.png</iconset>
             </property>
            </widget>
           </item>
@@ -421,7 +421,7 @@ border: 3px solid rgb(120, 157, 186)
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>Icons/smile.png</pixmap>
+             <pixmap>../02_Image/smile_disabled.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -578,7 +578,7 @@ border: 3px solid rgb(120, 157, 186)
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>Icons/mail.png</pixmap>
+             <pixmap>../02_Image/mail_disabled.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -603,7 +603,7 @@ border: 3px solid rgb(120, 157, 186)
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>Icons/instagram.png</pixmap>
+             <pixmap>../02_Image/instagram_disabled.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -628,7 +628,7 @@ border: 3px solid rgb(120, 157, 186)
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap>Icons/phone.png</pixmap>
+             <pixmap>../02_Image/phone_focus.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -783,7 +783,7 @@ border: 3px solid rgb(120, 157, 186)
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>../../../../../.designer/backup/Icons/minimize-2_disabled.png</normaloff>../../../../../.designer/backup/Icons/minimize-2_disabled.png</iconset>
+                 <normaloff>../02_Image/minus_disabled.png</normaloff>../02_Image/minus_disabled.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -812,7 +812,7 @@ border: 3px solid rgb(120, 157, 186)
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>../../../../../.designer/backup/Icons/maximize-2_disabled.png</normaloff>../../../../../.designer/backup/Icons/maximize-2_disabled.png</iconset>
+                 <normaloff>../02_Image/maximize-2_disabled.png</normaloff>../02_Image/maximize-2_disabled.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -824,6 +824,12 @@ border: 3px solid rgb(120, 157, 186)
              </item>
              <item>
               <widget class="QPushButton" name="pushButton_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="minimumSize">
                 <size>
                  <width>40</width>
@@ -841,7 +847,7 @@ border: 3px solid rgb(120, 157, 186)
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>../../../../../.designer/backup/Icons/x_disabled.png</normaloff>../../../../../.designer/backup/Icons/x_disabled.png</iconset>
+                 <normaloff>../02_Image/x_disabled.png</normaloff>../02_Image/x_disabled.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -877,7 +883,7 @@ border: 3px solid rgb(120, 157, 186)
              </font>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>2</number>
             </property>
             <widget class="QWidget" name="page_0_Registrar_Historico">
              <property name="styleSheet">
@@ -2271,243 +2277,18 @@ QComboBox
                  <property name="bottomMargin">
                   <number>0</number>
                  </property>
-                 <item row="3" column="1" alignment="Qt::AlignTop">
-                  <widget class="QFrame" name="frame_7">
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QGridLayout" name="gridLayout_10">
-                    <property name="leftMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>0</number>
-                    </property>
-                    <item row="3" column="0">
-                     <widget class="QLabel" name="label_21">
-                      <property name="text">
-                       <string>TE:</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="4">
-                     <widget class="QDoubleSpinBox" name="doubleSpinBox_23">
-                      <property name="sizePolicy">
-                       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                       </sizepolicy>
-                      </property>
-                      <property name="maximum">
-                       <double>99999999999.000000000000000</double>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="0">
-                     <widget class="QLabel" name="label_17">
-                      <property name="text">
-                       <string>TUSD:</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="2">
-                     <widget class="QLabel" name="label_38">
-                      <property name="sizePolicy">
-                       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                       </sizepolicy>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">QLabel {
-   /* background-color: #FFFFFF;*/
-    qproperty-alignment: AlignCenter;
-	color: #3d8ec9;
-	font: 77 20px &quot;Verdana&quot;;
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>Consumo (R$/kWh)</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="1">
-                     <widget class="QDoubleSpinBox" name="doubleSpinBox_24">
-                      <property name="sizePolicy">
-                       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                       </sizepolicy>
-                      </property>
-                      <property name="maximum">
-                       <double>99999999999.000000000000000</double>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="3">
-                     <widget class="QLabel" name="label_18">
-                      <property name="text">
-                       <string>TUSD:</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="3" column="3">
-                     <widget class="QLabel" name="label_22">
-                      <property name="text">
-                       <string>TE:</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="0" colspan="2">
-                     <widget class="QLabel" name="label_69">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel {
-   /* background-color: #FFFFFF;*/
-    qproperty-alignment: AlignCenter;
-	color: #3d8ec9;
-	font: 77 16px &quot;Verdana&quot;;
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>Fora Ponta</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="3" colspan="2">
-                     <widget class="QLabel" name="label_71">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel {
-   /* background-color: #FFFFFF;*/
-    qproperty-alignment: AlignCenter;
-	color: #3d8ec9;
-	font: 77 16px &quot;Verdana&quot;;
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>Ponta</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="3" column="1">
-                     <widget class="QDoubleSpinBox" name="doubleSpinBox_27"/>
-                    </item>
-                    <item row="3" column="4">
-                     <widget class="QDoubleSpinBox" name="doubleSpinBox_62"/>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
                  <item row="3" column="0">
-                  <widget class="QFrame" name="frame_9">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
+                  <spacer name="horizontalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
                    </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QGridLayout" name="gridLayout_7">
-                    <property name="leftMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="topMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="rightMargin">
-                     <number>0</number>
-                    </property>
-                    <property name="bottomMargin">
-                     <number>0</number>
-                    </property>
-                    <item row="1" column="3" colspan="2">
-                     <widget class="QLabel" name="label_42">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel {
-   /* background-color: #FFFFFF;*/
-    qproperty-alignment: AlignCenter;
-	color: #3d8ec9;
-	font: 77 16px &quot;Verdana&quot;;
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>Sem Imposto</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="1" column="0" colspan="2">
-                     <widget class="QLabel" name="label_41">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel {
-   /* background-color: #FFFFFF;*/
-    qproperty-alignment: AlignCenter;
-	color: #3d8ec9;
-	font: 77 16px &quot;Verdana&quot;;
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>Com Imposto</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="0" column="0" colspan="5">
-                     <widget class="QLabel" name="label_33">
-                      <property name="styleSheet">
-                       <string notr="true">QLabel {
-   /* background-color: #FFFFFF;*/
-    qproperty-alignment: AlignCenter;
-	color: #3d8ec9;
-	font: 77 20px &quot;Verdana&quot;;
-}</string>
-                      </property>
-                      <property name="text">
-                       <string>Demanda (R$/kW)</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="4">
-                     <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
-                      <property name="maximum">
-                       <double>99999999999.000000000000000</double>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="1">
-                     <widget class="QDoubleSpinBox" name="doubleSpinBox_14">
-                      <property name="maximum">
-                       <double>99999999999.000000000000000</double>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="0">
-                     <widget class="QLabel" name="label_29">
-                      <property name="text">
-                       <string>Fora Ponta / Ponta:</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item row="2" column="3">
-                     <widget class="QLabel" name="label_30">
-                      <property name="text">
-                       <string>Fora Ponta / Ponta:</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
+                  </spacer>
                  </item>
                  <item row="1" column="0">
                   <widget class="QFrame" name="frame_22">
@@ -2653,6 +2434,280 @@ QComboBox
                    </layout>
                   </widget>
                  </item>
+                 <item row="5" column="0">
+                  <widget class="QFrame" name="frame_9">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_7">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item row="1" column="3" colspan="2">
+                     <widget class="QLabel" name="label_42">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+   /* background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: 77 16px &quot;Verdana&quot;;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Sem Imposto</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QLabel" name="label_41">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+   /* background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: 77 16px &quot;Verdana&quot;;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Com Imposto</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0" colspan="5">
+                     <widget class="QLabel" name="label_33">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+   /* background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: 77 20px &quot;Verdana&quot;;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Demanda (R$/kW)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="4">
+                     <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
+                      <property name="maximum">
+                       <double>99999999999.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QDoubleSpinBox" name="doubleSpinBox_14">
+                      <property name="maximum">
+                       <double>99999999999.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_29">
+                      <property name="text">
+                       <string>Fora Ponta / Ponta:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="3">
+                     <widget class="QLabel" name="label_30">
+                      <property name="text">
+                       <string>Fora Ponta / Ponta:</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" colspan="2" alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_37">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLabel {
+   /* background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: white;
+	font: 77 24px &quot;Verdana&quot;;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Modalidade Tarifária Verde</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="1" alignment="Qt::AlignTop">
+                  <widget class="QFrame" name="frame_7">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_10">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="label_21">
+                      <property name="text">
+                       <string>TE:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="4">
+                     <widget class="QDoubleSpinBox" name="doubleSpinBox_23">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="maximum">
+                       <double>99999999999.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_17">
+                      <property name="text">
+                       <string>TUSD:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLabel" name="label_38">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+   /* background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: 77 20px &quot;Verdana&quot;;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Consumo (R$/kWh)</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QDoubleSpinBox" name="doubleSpinBox_24">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="maximum">
+                       <double>99999999999.000000000000000</double>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="3">
+                     <widget class="QLabel" name="label_18">
+                      <property name="text">
+                       <string>TUSD:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="3">
+                     <widget class="QLabel" name="label_22">
+                      <property name="text">
+                       <string>TE:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0" colspan="2">
+                     <widget class="QLabel" name="label_69">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+   /* background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: 77 16px &quot;Verdana&quot;;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Fora Ponta</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="3" colspan="2">
+                     <widget class="QLabel" name="label_71">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+   /* background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: #3d8ec9;
+	font: 77 16px &quot;Verdana&quot;;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Ponta</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QDoubleSpinBox" name="doubleSpinBox_27"/>
+                    </item>
+                    <item row="3" column="4">
+                     <widget class="QDoubleSpinBox" name="doubleSpinBox_62"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item row="0" column="0" colspan="2" alignment="Qt::AlignBottom">
+                  <widget class="QLabel" name="label_36">
+                   <property name="styleSheet">
+                    <string notr="true">QLabel {
+   /* background-color: #FFFFFF;*/
+    qproperty-alignment: AlignCenter;
+	color: white;
+	font: 77 24px &quot;Verdana&quot;;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Modalidade Tarifária Azul</string>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="1" column="1">
                   <widget class="QFrame" name="frame">
                    <property name="frameShape">
@@ -2788,41 +2843,18 @@ QComboBox
                    </layout>
                   </widget>
                  </item>
-                 <item row="2" column="0" colspan="2" alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_37">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
+                 <item row="2" column="0">
+                  <spacer name="horizontalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
                    </property>
-                   <property name="styleSheet">
-                    <string notr="true">QLabel {
-   /* background-color: #FFFFFF;*/
-    qproperty-alignment: AlignCenter;
-	color: white;
-	font: 77 24px &quot;Verdana&quot;;
-}</string>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
                    </property>
-                   <property name="text">
-                    <string>Modalidade Tarifária Verde</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="0" colspan="2" alignment="Qt::AlignBottom">
-                  <widget class="QLabel" name="label_36">
-                   <property name="styleSheet">
-                    <string notr="true">QLabel {
-   /* background-color: #FFFFFF;*/
-    qproperty-alignment: AlignCenter;
-	color: white;
-	font: 77 24px &quot;Verdana&quot;;
-}</string>
-                   </property>
-                   <property name="text">
-                    <string>Modalidade Tarifária Azul</string>
-                   </property>
-                  </widget>
+                  </spacer>
                  </item>
                 </layout>
                </widget>

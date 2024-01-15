@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'Projeto_V6inAdBm.ui'
+## Form generated from reading UI file 'Projeto_V6XxlQKw.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -121,7 +121,7 @@ class Ui_MainWindow(object):
         self.label.setObjectName(u"label")
         self.label.setMinimumSize(QSize(50, 50))
         self.label.setMaximumSize(QSize(50, 50))
-        self.label.setPixmap(QPixmap(u"Icons/zap.png"))
+        self.label.setPixmap(QPixmap(u"../02_Image/zap.png"))
         self.label.setScaledContents(True)
 
         self.horizontalLayout_2.addWidget(self.label)
@@ -170,7 +170,7 @@ class Ui_MainWindow(object):
         self.pushButton_0.setAutoFillBackground(False)
         self.pushButton_0.setStyleSheet(u"")
         icon1 = QIcon()
-        icon1.addFile(u"Icons/bar-chart-2_disabled.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u"../02_Image/bar-chart-2_focus.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_0.setIcon(icon1)
         self.pushButton_0.setAutoDefault(False)
         self.pushButton_0.setFlat(False)
@@ -188,7 +188,7 @@ class Ui_MainWindow(object):
         font3.setWeight(75)
         self.pushButton_1.setFont(font3)
         icon2 = QIcon()
-        icon2.addFile(u"Icons/dollar-sign_disabled.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u"../02_Image/dollar-sign_focus.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_1.setIcon(icon2)
 
         self.verticalLayout_2.addWidget(self.pushButton_1, 0, Qt.AlignLeft)
@@ -198,7 +198,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.setMinimumSize(QSize(250, 0))
         self.pushButton_3.setFont(font3)
         icon3 = QIcon()
-        icon3.addFile(u"Icons/pie-chart_focus.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u"../02_Image/pie-chart_focus.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_3.setIcon(icon3)
 
         self.verticalLayout_2.addWidget(self.pushButton_3)
@@ -223,7 +223,7 @@ class Ui_MainWindow(object):
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMinimumSize(QSize(40, 40))
         self.label_3.setMaximumSize(QSize(40, 40))
-        self.label_3.setPixmap(QPixmap(u"Icons/smile.png"))
+        self.label_3.setPixmap(QPixmap(u"../02_Image/smile_disabled.png"))
         self.label_3.setScaledContents(True)
 
         self.horizontalLayout_3.addWidget(self.label_3)
@@ -289,7 +289,7 @@ class Ui_MainWindow(object):
         self.label_12.setObjectName(u"label_12")
         self.label_12.setMinimumSize(QSize(30, 30))
         self.label_12.setMaximumSize(QSize(30, 30))
-        self.label_12.setPixmap(QPixmap(u"Icons/mail.png"))
+        self.label_12.setPixmap(QPixmap(u"../02_Image/mail_disabled.png"))
         self.label_12.setScaledContents(True)
 
         self.gridLayout_2.addWidget(self.label_12, 0, 0, 1, 1)
@@ -298,7 +298,7 @@ class Ui_MainWindow(object):
         self.label_13.setObjectName(u"label_13")
         self.label_13.setMinimumSize(QSize(30, 30))
         self.label_13.setMaximumSize(QSize(30, 30))
-        self.label_13.setPixmap(QPixmap(u"Icons/instagram.png"))
+        self.label_13.setPixmap(QPixmap(u"../02_Image/instagram_disabled.png"))
         self.label_13.setScaledContents(True)
 
         self.gridLayout_2.addWidget(self.label_13, 1, 0, 1, 1)
@@ -307,7 +307,7 @@ class Ui_MainWindow(object):
         self.label_14.setObjectName(u"label_14")
         self.label_14.setMinimumSize(QSize(30, 30))
         self.label_14.setMaximumSize(QSize(30, 30))
-        self.label_14.setPixmap(QPixmap(u"Icons/phone.png"))
+        self.label_14.setPixmap(QPixmap(u"../02_Image/phone_focus.png"))
         self.label_14.setScaledContents(True)
 
         self.gridLayout_2.addWidget(self.label_14, 2, 0, 1, 1)
@@ -367,7 +367,7 @@ class Ui_MainWindow(object):
         self.pushButton_8.setMinimumSize(QSize(40, 40))
         self.pushButton_8.setMaximumSize(QSize(40, 40))
         icon4 = QIcon()
-        icon4.addFile(u"../../../../../.designer/backup/Icons/minimize-2_disabled.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u"../02_Image/minus_disabled.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_8.setIcon(icon4)
         self.pushButton_8.setIconSize(QSize(30, 30))
 
@@ -378,7 +378,7 @@ class Ui_MainWindow(object):
         self.pushButton_7.setMinimumSize(QSize(40, 40))
         self.pushButton_7.setMaximumSize(QSize(40, 40))
         icon5 = QIcon()
-        icon5.addFile(u"../../../../../.designer/backup/Icons/maximize-2_disabled.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u"../02_Image/maximize-2_disabled.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_7.setIcon(icon5)
         self.pushButton_7.setIconSize(QSize(30, 30))
 
@@ -386,10 +386,15 @@ class Ui_MainWindow(object):
 
         self.pushButton_9 = QPushButton(self.header_nav)
         self.pushButton_9.setObjectName(u"pushButton_9")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Expanding)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.pushButton_9.sizePolicy().hasHeightForWidth())
+        self.pushButton_9.setSizePolicy(sizePolicy2)
         self.pushButton_9.setMinimumSize(QSize(40, 40))
         self.pushButton_9.setMaximumSize(QSize(40, 40))
         icon6 = QIcon()
-        icon6.addFile(u"../../../../../.designer/backup/Icons/x_disabled.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon6.addFile(u"../02_Image/x_disabled.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_9.setIcon(icon6)
         self.pushButton_9.setIconSize(QSize(30, 30))
 
@@ -827,11 +832,11 @@ class Ui_MainWindow(object):
         self.comboBox_2.addItem("")
         self.comboBox_2.addItem("")
         self.comboBox_2.setObjectName(u"comboBox_2")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
-        sizePolicy2.setHorizontalStretch(4)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.comboBox_2.sizePolicy().hasHeightForWidth())
-        self.comboBox_2.setSizePolicy(sizePolicy2)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy3.setHorizontalStretch(4)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.comboBox_2.sizePolicy().hasHeightForWidth())
+        self.comboBox_2.setSizePolicy(sizePolicy3)
 
         self.gridLayout_13.addWidget(self.comboBox_2, 2, 1, 1, 1)
 
@@ -844,11 +849,11 @@ class Ui_MainWindow(object):
 
         self.frame_26 = QFrame(self.frame_15)
         self.frame_26.setObjectName(u"frame_26")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Minimum)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.frame_26.sizePolicy().hasHeightForWidth())
-        self.frame_26.setSizePolicy(sizePolicy3)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Minimum)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.frame_26.sizePolicy().hasHeightForWidth())
+        self.frame_26.setSizePolicy(sizePolicy4)
         self.frame_26.setMinimumSize(QSize(118, 75))
         self.frame_26.setMaximumSize(QSize(200, 19))
         self.frame_26.setFont(font1)
@@ -1347,169 +1352,9 @@ class Ui_MainWindow(object):
         self.gridLayout_3 = QGridLayout(self.frame_16)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.frame_7 = QFrame(self.frame_16)
-        self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setFrameShape(QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QFrame.Raised)
-        self.gridLayout_10 = QGridLayout(self.frame_7)
-        self.gridLayout_10.setObjectName(u"gridLayout_10")
-        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
-        self.label_21 = QLabel(self.frame_7)
-        self.label_21.setObjectName(u"label_21")
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.gridLayout_10.addWidget(self.label_21, 3, 0, 1, 1)
-
-        self.doubleSpinBox_23 = QDoubleSpinBox(self.frame_7)
-        self.doubleSpinBox_23.setObjectName(u"doubleSpinBox_23")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
-        sizePolicy4.setHorizontalStretch(0)
-        sizePolicy4.setVerticalStretch(0)
-        sizePolicy4.setHeightForWidth(self.doubleSpinBox_23.sizePolicy().hasHeightForWidth())
-        self.doubleSpinBox_23.setSizePolicy(sizePolicy4)
-        self.doubleSpinBox_23.setMaximum(99999999999.000000000000000)
-
-        self.gridLayout_10.addWidget(self.doubleSpinBox_23, 2, 4, 1, 1)
-
-        self.label_17 = QLabel(self.frame_7)
-        self.label_17.setObjectName(u"label_17")
-
-        self.gridLayout_10.addWidget(self.label_17, 2, 0, 1, 1)
-
-        self.label_38 = QLabel(self.frame_7)
-        self.label_38.setObjectName(u"label_38")
-        sizePolicy1.setHeightForWidth(self.label_38.sizePolicy().hasHeightForWidth())
-        self.label_38.setSizePolicy(sizePolicy1)
-        self.label_38.setStyleSheet(u"QLabel {\n"
-"   /* background-color: #FFFFFF;*/\n"
-"    qproperty-alignment: AlignCenter;\n"
-"	color: #3d8ec9;\n"
-"	font: 77 20px \"Verdana\";\n"
-"}")
-
-        self.gridLayout_10.addWidget(self.label_38, 0, 2, 1, 1)
-
-        self.doubleSpinBox_24 = QDoubleSpinBox(self.frame_7)
-        self.doubleSpinBox_24.setObjectName(u"doubleSpinBox_24")
-        sizePolicy4.setHeightForWidth(self.doubleSpinBox_24.sizePolicy().hasHeightForWidth())
-        self.doubleSpinBox_24.setSizePolicy(sizePolicy4)
-        self.doubleSpinBox_24.setMaximum(99999999999.000000000000000)
-
-        self.gridLayout_10.addWidget(self.doubleSpinBox_24, 2, 1, 1, 1)
-
-        self.label_18 = QLabel(self.frame_7)
-        self.label_18.setObjectName(u"label_18")
-
-        self.gridLayout_10.addWidget(self.label_18, 2, 3, 1, 1)
-
-        self.label_22 = QLabel(self.frame_7)
-        self.label_22.setObjectName(u"label_22")
-
-        self.gridLayout_10.addWidget(self.label_22, 3, 3, 1, 1)
-
-        self.label_69 = QLabel(self.frame_7)
-        self.label_69.setObjectName(u"label_69")
-        self.label_69.setStyleSheet(u"QLabel {\n"
-"   /* background-color: #FFFFFF;*/\n"
-"    qproperty-alignment: AlignCenter;\n"
-"	color: #3d8ec9;\n"
-"	font: 77 16px \"Verdana\";\n"
-"}")
-
-        self.gridLayout_10.addWidget(self.label_69, 1, 0, 1, 2)
-
-        self.label_71 = QLabel(self.frame_7)
-        self.label_71.setObjectName(u"label_71")
-        self.label_71.setStyleSheet(u"QLabel {\n"
-"   /* background-color: #FFFFFF;*/\n"
-"    qproperty-alignment: AlignCenter;\n"
-"	color: #3d8ec9;\n"
-"	font: 77 16px \"Verdana\";\n"
-"}")
-
-        self.gridLayout_10.addWidget(self.label_71, 1, 3, 1, 2)
-
-        self.doubleSpinBox_27 = QDoubleSpinBox(self.frame_7)
-        self.doubleSpinBox_27.setObjectName(u"doubleSpinBox_27")
-
-        self.gridLayout_10.addWidget(self.doubleSpinBox_27, 3, 1, 1, 1)
-
-        self.doubleSpinBox_62 = QDoubleSpinBox(self.frame_7)
-        self.doubleSpinBox_62.setObjectName(u"doubleSpinBox_62")
-
-        self.gridLayout_10.addWidget(self.doubleSpinBox_62, 3, 4, 1, 1)
-
-
-        self.gridLayout_3.addWidget(self.frame_7, 3, 1, 1, 1, Qt.AlignTop)
-
-        self.frame_9 = QFrame(self.frame_16)
-        self.frame_9.setObjectName(u"frame_9")
-        sizePolicy5 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
-        sizePolicy5.setHorizontalStretch(0)
-        sizePolicy5.setVerticalStretch(0)
-        sizePolicy5.setHeightForWidth(self.frame_9.sizePolicy().hasHeightForWidth())
-        self.frame_9.setSizePolicy(sizePolicy5)
-        self.frame_9.setFrameShape(QFrame.StyledPanel)
-        self.frame_9.setFrameShadow(QFrame.Raised)
-        self.gridLayout_7 = QGridLayout(self.frame_9)
-        self.gridLayout_7.setObjectName(u"gridLayout_7")
-        self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.label_42 = QLabel(self.frame_9)
-        self.label_42.setObjectName(u"label_42")
-        self.label_42.setStyleSheet(u"QLabel {\n"
-"   /* background-color: #FFFFFF;*/\n"
-"    qproperty-alignment: AlignCenter;\n"
-"	color: #3d8ec9;\n"
-"	font: 77 16px \"Verdana\";\n"
-"}")
-
-        self.gridLayout_7.addWidget(self.label_42, 1, 3, 1, 2)
-
-        self.label_41 = QLabel(self.frame_9)
-        self.label_41.setObjectName(u"label_41")
-        self.label_41.setStyleSheet(u"QLabel {\n"
-"   /* background-color: #FFFFFF;*/\n"
-"    qproperty-alignment: AlignCenter;\n"
-"	color: #3d8ec9;\n"
-"	font: 77 16px \"Verdana\";\n"
-"}")
-
-        self.gridLayout_7.addWidget(self.label_41, 1, 0, 1, 2)
-
-        self.label_33 = QLabel(self.frame_9)
-        self.label_33.setObjectName(u"label_33")
-        self.label_33.setStyleSheet(u"QLabel {\n"
-"   /* background-color: #FFFFFF;*/\n"
-"    qproperty-alignment: AlignCenter;\n"
-"	color: #3d8ec9;\n"
-"	font: 77 20px \"Verdana\";\n"
-"}")
-
-        self.gridLayout_7.addWidget(self.label_33, 0, 0, 1, 5)
-
-        self.doubleSpinBox_8 = QDoubleSpinBox(self.frame_9)
-        self.doubleSpinBox_8.setObjectName(u"doubleSpinBox_8")
-        self.doubleSpinBox_8.setMaximum(99999999999.000000000000000)
-
-        self.gridLayout_7.addWidget(self.doubleSpinBox_8, 2, 4, 1, 1)
-
-        self.doubleSpinBox_14 = QDoubleSpinBox(self.frame_9)
-        self.doubleSpinBox_14.setObjectName(u"doubleSpinBox_14")
-        self.doubleSpinBox_14.setMaximum(99999999999.000000000000000)
-
-        self.gridLayout_7.addWidget(self.doubleSpinBox_14, 2, 1, 1, 1)
-
-        self.label_29 = QLabel(self.frame_9)
-        self.label_29.setObjectName(u"label_29")
-
-        self.gridLayout_7.addWidget(self.label_29, 2, 0, 1, 1)
-
-        self.label_30 = QLabel(self.frame_9)
-        self.label_30.setObjectName(u"label_30")
-
-        self.gridLayout_7.addWidget(self.label_30, 2, 3, 1, 1)
-
-
-        self.gridLayout_3.addWidget(self.frame_9, 3, 0, 1, 1)
+        self.gridLayout_3.addItem(self.horizontalSpacer_3, 3, 0, 1, 1)
 
         self.frame_22 = QFrame(self.frame_16)
         self.frame_22.setObjectName(u"frame_22")
@@ -1613,6 +1458,194 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.frame_22, 1, 0, 1, 1)
 
+        self.frame_9 = QFrame(self.frame_16)
+        self.frame_9.setObjectName(u"frame_9")
+        sizePolicy5 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
+        sizePolicy5.setHorizontalStretch(0)
+        sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.frame_9.sizePolicy().hasHeightForWidth())
+        self.frame_9.setSizePolicy(sizePolicy5)
+        self.frame_9.setFrameShape(QFrame.StyledPanel)
+        self.frame_9.setFrameShadow(QFrame.Raised)
+        self.gridLayout_7 = QGridLayout(self.frame_9)
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.label_42 = QLabel(self.frame_9)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setStyleSheet(u"QLabel {\n"
+"   /* background-color: #FFFFFF;*/\n"
+"    qproperty-alignment: AlignCenter;\n"
+"	color: #3d8ec9;\n"
+"	font: 77 16px \"Verdana\";\n"
+"}")
+
+        self.gridLayout_7.addWidget(self.label_42, 1, 3, 1, 2)
+
+        self.label_41 = QLabel(self.frame_9)
+        self.label_41.setObjectName(u"label_41")
+        self.label_41.setStyleSheet(u"QLabel {\n"
+"   /* background-color: #FFFFFF;*/\n"
+"    qproperty-alignment: AlignCenter;\n"
+"	color: #3d8ec9;\n"
+"	font: 77 16px \"Verdana\";\n"
+"}")
+
+        self.gridLayout_7.addWidget(self.label_41, 1, 0, 1, 2)
+
+        self.label_33 = QLabel(self.frame_9)
+        self.label_33.setObjectName(u"label_33")
+        self.label_33.setStyleSheet(u"QLabel {\n"
+"   /* background-color: #FFFFFF;*/\n"
+"    qproperty-alignment: AlignCenter;\n"
+"	color: #3d8ec9;\n"
+"	font: 77 20px \"Verdana\";\n"
+"}")
+
+        self.gridLayout_7.addWidget(self.label_33, 0, 0, 1, 5)
+
+        self.doubleSpinBox_8 = QDoubleSpinBox(self.frame_9)
+        self.doubleSpinBox_8.setObjectName(u"doubleSpinBox_8")
+        self.doubleSpinBox_8.setMaximum(99999999999.000000000000000)
+
+        self.gridLayout_7.addWidget(self.doubleSpinBox_8, 2, 4, 1, 1)
+
+        self.doubleSpinBox_14 = QDoubleSpinBox(self.frame_9)
+        self.doubleSpinBox_14.setObjectName(u"doubleSpinBox_14")
+        self.doubleSpinBox_14.setMaximum(99999999999.000000000000000)
+
+        self.gridLayout_7.addWidget(self.doubleSpinBox_14, 2, 1, 1, 1)
+
+        self.label_29 = QLabel(self.frame_9)
+        self.label_29.setObjectName(u"label_29")
+
+        self.gridLayout_7.addWidget(self.label_29, 2, 0, 1, 1)
+
+        self.label_30 = QLabel(self.frame_9)
+        self.label_30.setObjectName(u"label_30")
+
+        self.gridLayout_7.addWidget(self.label_30, 2, 3, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.frame_9, 5, 0, 1, 1)
+
+        self.label_37 = QLabel(self.frame_16)
+        self.label_37.setObjectName(u"label_37")
+        sizePolicy.setHeightForWidth(self.label_37.sizePolicy().hasHeightForWidth())
+        self.label_37.setSizePolicy(sizePolicy)
+        self.label_37.setStyleSheet(u"QLabel {\n"
+"   /* background-color: #FFFFFF;*/\n"
+"    qproperty-alignment: AlignCenter;\n"
+"	color: white;\n"
+"	font: 77 24px \"Verdana\";\n"
+"}")
+
+        self.gridLayout_3.addWidget(self.label_37, 4, 0, 1, 2, Qt.AlignBottom)
+
+        self.frame_7 = QFrame(self.frame_16)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setFrameShape(QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Raised)
+        self.gridLayout_10 = QGridLayout(self.frame_7)
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.label_21 = QLabel(self.frame_7)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout_10.addWidget(self.label_21, 3, 0, 1, 1)
+
+        self.doubleSpinBox_23 = QDoubleSpinBox(self.frame_7)
+        self.doubleSpinBox_23.setObjectName(u"doubleSpinBox_23")
+        sizePolicy6 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Fixed)
+        sizePolicy6.setHorizontalStretch(0)
+        sizePolicy6.setVerticalStretch(0)
+        sizePolicy6.setHeightForWidth(self.doubleSpinBox_23.sizePolicy().hasHeightForWidth())
+        self.doubleSpinBox_23.setSizePolicy(sizePolicy6)
+        self.doubleSpinBox_23.setMaximum(99999999999.000000000000000)
+
+        self.gridLayout_10.addWidget(self.doubleSpinBox_23, 2, 4, 1, 1)
+
+        self.label_17 = QLabel(self.frame_7)
+        self.label_17.setObjectName(u"label_17")
+
+        self.gridLayout_10.addWidget(self.label_17, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.frame_7)
+        self.label_38.setObjectName(u"label_38")
+        sizePolicy1.setHeightForWidth(self.label_38.sizePolicy().hasHeightForWidth())
+        self.label_38.setSizePolicy(sizePolicy1)
+        self.label_38.setStyleSheet(u"QLabel {\n"
+"   /* background-color: #FFFFFF;*/\n"
+"    qproperty-alignment: AlignCenter;\n"
+"	color: #3d8ec9;\n"
+"	font: 77 20px \"Verdana\";\n"
+"}")
+
+        self.gridLayout_10.addWidget(self.label_38, 0, 2, 1, 1)
+
+        self.doubleSpinBox_24 = QDoubleSpinBox(self.frame_7)
+        self.doubleSpinBox_24.setObjectName(u"doubleSpinBox_24")
+        sizePolicy6.setHeightForWidth(self.doubleSpinBox_24.sizePolicy().hasHeightForWidth())
+        self.doubleSpinBox_24.setSizePolicy(sizePolicy6)
+        self.doubleSpinBox_24.setMaximum(99999999999.000000000000000)
+
+        self.gridLayout_10.addWidget(self.doubleSpinBox_24, 2, 1, 1, 1)
+
+        self.label_18 = QLabel(self.frame_7)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_10.addWidget(self.label_18, 2, 3, 1, 1)
+
+        self.label_22 = QLabel(self.frame_7)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_10.addWidget(self.label_22, 3, 3, 1, 1)
+
+        self.label_69 = QLabel(self.frame_7)
+        self.label_69.setObjectName(u"label_69")
+        self.label_69.setStyleSheet(u"QLabel {\n"
+"   /* background-color: #FFFFFF;*/\n"
+"    qproperty-alignment: AlignCenter;\n"
+"	color: #3d8ec9;\n"
+"	font: 77 16px \"Verdana\";\n"
+"}")
+
+        self.gridLayout_10.addWidget(self.label_69, 1, 0, 1, 2)
+
+        self.label_71 = QLabel(self.frame_7)
+        self.label_71.setObjectName(u"label_71")
+        self.label_71.setStyleSheet(u"QLabel {\n"
+"   /* background-color: #FFFFFF;*/\n"
+"    qproperty-alignment: AlignCenter;\n"
+"	color: #3d8ec9;\n"
+"	font: 77 16px \"Verdana\";\n"
+"}")
+
+        self.gridLayout_10.addWidget(self.label_71, 1, 3, 1, 2)
+
+        self.doubleSpinBox_27 = QDoubleSpinBox(self.frame_7)
+        self.doubleSpinBox_27.setObjectName(u"doubleSpinBox_27")
+
+        self.gridLayout_10.addWidget(self.doubleSpinBox_27, 3, 1, 1, 1)
+
+        self.doubleSpinBox_62 = QDoubleSpinBox(self.frame_7)
+        self.doubleSpinBox_62.setObjectName(u"doubleSpinBox_62")
+
+        self.gridLayout_10.addWidget(self.doubleSpinBox_62, 3, 4, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.frame_7, 5, 1, 1, 1, Qt.AlignTop)
+
+        self.label_36 = QLabel(self.frame_16)
+        self.label_36.setObjectName(u"label_36")
+        self.label_36.setStyleSheet(u"QLabel {\n"
+"   /* background-color: #FFFFFF;*/\n"
+"    qproperty-alignment: AlignCenter;\n"
+"	color: white;\n"
+"	font: 77 24px \"Verdana\";\n"
+"}")
+
+        self.gridLayout_3.addWidget(self.label_36, 0, 0, 1, 2, Qt.AlignBottom)
+
         self.frame = QFrame(self.frame_16)
         self.frame.setObjectName(u"frame")
         self.frame.setFrameShape(QFrame.StyledPanel)
@@ -1657,8 +1690,8 @@ class Ui_MainWindow(object):
 
         self.doubleSpinBox_25 = QDoubleSpinBox(self.frame)
         self.doubleSpinBox_25.setObjectName(u"doubleSpinBox_25")
-        sizePolicy4.setHeightForWidth(self.doubleSpinBox_25.sizePolicy().hasHeightForWidth())
-        self.doubleSpinBox_25.setSizePolicy(sizePolicy4)
+        sizePolicy6.setHeightForWidth(self.doubleSpinBox_25.sizePolicy().hasHeightForWidth())
+        self.doubleSpinBox_25.setSizePolicy(sizePolicy6)
         self.doubleSpinBox_25.setMaximum(99999999999.000000000000000)
 
         self.gridLayout_9.addWidget(self.doubleSpinBox_25, 2, 1, 1, 1)
@@ -1675,8 +1708,8 @@ class Ui_MainWindow(object):
 
         self.doubleSpinBox_26 = QDoubleSpinBox(self.frame)
         self.doubleSpinBox_26.setObjectName(u"doubleSpinBox_26")
-        sizePolicy4.setHeightForWidth(self.doubleSpinBox_26.sizePolicy().hasHeightForWidth())
-        self.doubleSpinBox_26.setSizePolicy(sizePolicy4)
+        sizePolicy6.setHeightForWidth(self.doubleSpinBox_26.sizePolicy().hasHeightForWidth())
+        self.doubleSpinBox_26.setSizePolicy(sizePolicy6)
         self.doubleSpinBox_26.setMaximum(99999999999.000000000000000)
 
         self.gridLayout_9.addWidget(self.doubleSpinBox_26, 2, 4, 1, 1)
@@ -1704,37 +1737,17 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.frame, 1, 1, 1, 1)
 
-        self.label_37 = QLabel(self.frame_16)
-        self.label_37.setObjectName(u"label_37")
-        sizePolicy.setHeightForWidth(self.label_37.sizePolicy().hasHeightForWidth())
-        self.label_37.setSizePolicy(sizePolicy)
-        self.label_37.setStyleSheet(u"QLabel {\n"
-"   /* background-color: #FFFFFF;*/\n"
-"    qproperty-alignment: AlignCenter;\n"
-"	color: white;\n"
-"	font: 77 24px \"Verdana\";\n"
-"}")
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.gridLayout_3.addWidget(self.label_37, 2, 0, 1, 2, Qt.AlignBottom)
-
-        self.label_36 = QLabel(self.frame_16)
-        self.label_36.setObjectName(u"label_36")
-        self.label_36.setStyleSheet(u"QLabel {\n"
-"   /* background-color: #FFFFFF;*/\n"
-"    qproperty-alignment: AlignCenter;\n"
-"	color: white;\n"
-"	font: 77 24px \"Verdana\";\n"
-"}")
-
-        self.gridLayout_3.addWidget(self.label_36, 0, 0, 1, 2, Qt.AlignBottom)
+        self.gridLayout_3.addItem(self.horizontalSpacer_4, 2, 0, 1, 1)
 
 
         self.verticalLayout_10.addWidget(self.frame_16)
 
         self.frame_21 = QFrame(self.page_1_Registrar_Tarifas)
         self.frame_21.setObjectName(u"frame_21")
-        sizePolicy3.setHeightForWidth(self.frame_21.sizePolicy().hasHeightForWidth())
-        self.frame_21.setSizePolicy(sizePolicy3)
+        sizePolicy4.setHeightForWidth(self.frame_21.sizePolicy().hasHeightForWidth())
+        self.frame_21.setSizePolicy(sizePolicy4)
         self.frame_21.setMinimumSize(QSize(0, 75))
         self.frame_21.setMaximumSize(QSize(200, 19))
         self.frame_21.setFrameShape(QFrame.StyledPanel)
@@ -2007,11 +2020,11 @@ class Ui_MainWindow(object):
 
         self.line_3 = QFrame(self.frame_18)
         self.line_3.setObjectName(u"line_3")
-        sizePolicy6 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Minimum)
-        sizePolicy6.setHorizontalStretch(0)
-        sizePolicy6.setVerticalStretch(0)
-        sizePolicy6.setHeightForWidth(self.line_3.sizePolicy().hasHeightForWidth())
-        self.line_3.setSizePolicy(sizePolicy6)
+        sizePolicy7 = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Minimum)
+        sizePolicy7.setHorizontalStretch(0)
+        sizePolicy7.setVerticalStretch(0)
+        sizePolicy7.setHeightForWidth(self.line_3.sizePolicy().hasHeightForWidth())
+        self.line_3.setSizePolicy(sizePolicy7)
         self.line_3.setFrameShape(QFrame.VLine)
         self.line_3.setFrameShadow(QFrame.Sunken)
 
@@ -2243,7 +2256,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.pushButton_0.setDefault(False)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2343,18 +2356,6 @@ class Ui_MainWindow(object):
         self.label_107.setText(QCoreApplication.translate("MainWindow", u"Novembro", None))
         self.label_95.setText(QCoreApplication.translate("MainWindow", u"Dezembro", None))
         self.label_112.setText(QCoreApplication.translate("MainWindow", u"Dezembro", None))
-        self.label_21.setText(QCoreApplication.translate("MainWindow", u"TE:", None))
-        self.label_17.setText(QCoreApplication.translate("MainWindow", u"TUSD:", None))
-        self.label_38.setText(QCoreApplication.translate("MainWindow", u"Consumo (R$/kWh)", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"TUSD:", None))
-        self.label_22.setText(QCoreApplication.translate("MainWindow", u"TE:", None))
-        self.label_69.setText(QCoreApplication.translate("MainWindow", u"Fora Ponta", None))
-        self.label_71.setText(QCoreApplication.translate("MainWindow", u"Ponta", None))
-        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Sem Imposto", None))
-        self.label_41.setText(QCoreApplication.translate("MainWindow", u"Com Imposto", None))
-        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Demanda (R$/kW)", None))
-        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Fora Ponta / Ponta:", None))
-        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Fora Ponta / Ponta:", None))
         self.label_28.setText(QCoreApplication.translate("MainWindow", u"Ponta:", None))
         self.label_34.setText(QCoreApplication.translate("MainWindow", u"Demanda (R$/kW)", None))
         self.label_48.setText(QCoreApplication.translate("MainWindow", u"Ponta:", None))
@@ -2362,6 +2363,20 @@ class Ui_MainWindow(object):
         self.label_56.setText(QCoreApplication.translate("MainWindow", u"Sem Imposto", None))
         self.label_27.setText(QCoreApplication.translate("MainWindow", u"Fora de Ponta:", None))
         self.label_47.setText(QCoreApplication.translate("MainWindow", u"Com Imposto", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Sem Imposto", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"Com Imposto", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Demanda (R$/kW)", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Fora Ponta / Ponta:", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Fora Ponta / Ponta:", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Modalidade Tarif\u00e1ria Verde", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"TE:", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"TUSD:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"Consumo (R$/kWh)", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"TUSD:", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"TE:", None))
+        self.label_69.setText(QCoreApplication.translate("MainWindow", u"Fora Ponta", None))
+        self.label_71.setText(QCoreApplication.translate("MainWindow", u"Ponta", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Modalidade Tarif\u00e1ria Azul", None))
         self.label_40.setText(QCoreApplication.translate("MainWindow", u"Consumo (R$/kWh)", None))
         self.label_72.setText(QCoreApplication.translate("MainWindow", u"Ponta", None))
         self.label_70.setText(QCoreApplication.translate("MainWindow", u"Fora Ponta", None))
@@ -2369,8 +2384,6 @@ class Ui_MainWindow(object):
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"TUSD:", None))
         self.label_26.setText(QCoreApplication.translate("MainWindow", u"TE:", None))
         self.label_25.setText(QCoreApplication.translate("MainWindow", u"TE:", None))
-        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Modalidade Tarif\u00e1ria Verde", None))
-        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Modalidade Tarif\u00e1ria Azul", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Atualizar", None))
         self.label_35.setText(QCoreApplication.translate("MainWindow", u"Azul", None))
         self.label_121.setText(QCoreApplication.translate("MainWindow", u"R$ 0,00", None))
